@@ -1,0 +1,34 @@
+================================================================================
+TỔNG HỢP NGUỒN DỮ LIỆU ĐỀ TÀI: PHÂN VÙNG KHỐI U NÃO / TỔN THƯƠNG PHỔI
+================================================================================
+
+1. BỘ DỮ LIỆU CHÍNH (BRAIN MRI SEGMENTATION)
+--------------------------------------------------------------------------------
+- Brain MRI Segmentation (Mateusz Buda)
+  + Vai trò: Huấn luyện mô hình 2D nhanh, làm Demo Web App (Streamlit).
+  + Quy mô & Định dạng: 3.929 ảnh lát cắt 2D (TIF/PNG) từ 110 bệnh nhân + mask nhị phân.
+  + Link: https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation
+
+- BraTS 2020 (Brain Tumor Segmentation Challenge)
+  + Vai trò: Tập dữ liệu huấn luyện chính đạt chuẩn học thuật quốc tế cao nhất.
+  + Quy mô & Định dạng: Ảnh quét thể tích 3D 4 kênh (T1, T1ce, T2, FLAIR), file .nii/.nii.gz.
+  + Link: https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation
+
+- TCGA-LGG / TCGA-GBM (The Cancer Imaging Archive - TCIA)
+  + Vai trò: Tập kiểm thử độc lập liên nguồn (External / Cross-Dataset Evaluation).
+  + Quy mô & Định dạng: Dữ liệu chụp lâm sàng từ nhiều bệnh viện khác nhau (DICOM/NIfTI).
+  + Link: https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966258
+
+
+2. BỘ DỮ LIỆU BỔ TRỢ (CHEST X-RAY / CT LUNG SEGMENTATION)
+--------------------------------------------------------------------------------
+- COVID-19 CT Lung and Infection Segmentation Dataset
+  + Vai trò: Mở rộng phân vùng tổn thương phổi trên ảnh cắt lớp CT.
+  + Quy mô & Định dạng: Ảnh CT lồng ngực kèm ground-truth mask vùng phổi và ổ dịch.
+  + Link: https://www.kaggle.com/datasets/andrewmvd/covid19-ct-scans
+
+- Chest X-Ray Images (Pnumonia)
+  + Vai trò: Thử nghiệm phân loại và xác định vùng viêm phổi trên ảnh X-quang.
+  + Quy mô & Định dạng: Hơn 5.800 ảnh X-quang ngực (JPEG).
+  + Link: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+================================================================================

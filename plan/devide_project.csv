@@ -1,0 +1,4 @@
+Thành viên,Trách nhiệm chính (Vai trò),Hạng mục công việc cốt lõi
+Nguyễn Thế Anh,Kiến trúc mô hình & Thuật toán cốt lõi,Thiết kế pipeline tổng thể; xây dựng thuật toán chính (U-Net / YOLO / RetinexNet / Otsu cải tiến); tối ưu hàm mất mát và viết mã nguồn logic xử lý quan trọng nhất.
+Nguyễn Kiêm Chính,Dữ liệu & Tiền xử lý (Preprocessing),"Thu thập và gán nhãn dataset; chuẩn hóa kích thước, tăng cường dữ liệu (Data Augmentation); thực hiện các bộ lọc nhiễu, cân bằng sáng (CLAHE, Gaussian, Morphology)."
+Phạm Thảo Nguyên,Đánh giá & Giao diện Demo (Deployment),"Tính toán chỉ số đối sánh (mAP, IoU, PSNR, SSIM, FPS); xây dựng giao diện tương tác người dùng (Streamlit / Gradio / PyQt); phụ trách slide thuyết trình và dựng video demo."
