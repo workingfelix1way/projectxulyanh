@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 
 class DoubleConv(nn.Module):
-    """(Conv2d => BatchNorm => ReLU) * 2"""
     def __init__(self, in_channels, out_channels):
         super(DoubleConv, self).__init__()
         self.double_conv = nn.Sequential(
@@ -44,7 +43,6 @@ class UNet(nn.Module):
         self.up4 = nn.ConvTranspose2d(128, 64, kernel_size=2, stride=2)
         self.conv4 = DoubleConv(128, 64)
 
-        # Output Layer
         self.out_conv = nn.Conv2d(64, out_channels, kernel_size=1)
 
     def forward(self, x):
@@ -73,10 +71,9 @@ class UNet(nn.Module):
         
         return self.out_conv(u4)
 
-# Test thử xem mô hình chạy đúng shape chưa
 if __name__ == "__main__":
-    x = torch.randn((1, 3, 256, 256)) # Batch=1, Channels=3, H=256, W=256
+    x = torch.randn((1, 3, 256, 256))
     model = UNet(in_channels=3, out_channels=1)
     preds = model(x)
-    print("Kích thước đầu vào:", x.shape)
-    print("Kích thước đầu ra (Mask):", preds.shape)
+    print("Input shape:", x.shape)
+    print("Output shape:", preds.shape)
