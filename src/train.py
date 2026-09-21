@@ -4,8 +4,10 @@ from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 from model import UNet
 from loss import DiceBCELoss
-from dataset import BrainTumorDataset
+import sys
 import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data.dataset import BrainTumorDataset
 
 def train():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
